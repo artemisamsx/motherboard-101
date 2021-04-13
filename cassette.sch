@@ -520,4 +520,74 @@ F 3 "" H 5950 1850 60  0001 C CNN
 	1    5950 1850
 	1    0    0    1   
 $EndComp
+$Comp
+L artemisa:LM311 U?
+U 2 1 608C2121
+P 5800 6000
+AR Path="/5AE11EC9/608C2121" Ref="U?"  Part="2" 
+AR Path="/5B118A76/608C2121" Ref="U19"  Part="2" 
+F 0 "U19" V 5300 6200 50  0000 L CNN
+F 1 "LM311" V 5300 5650 50  0000 L CNN
+F 2 "artemisa:DIP-8_300" H 5800 6000 60  0001 C CNN
+F 3 "" H 5800 6000 60  0001 C CNN
+	2    5800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6100 5800 6350
+Wire Wire Line
+	5500 6350 5500 6400
+Connection ~ 5500 6350
+Wire Wire Line
+	5800 6350 5500 6350
+Wire Wire Line
+	5500 5650 5500 5700
+Connection ~ 5500 5650
+Wire Wire Line
+	5800 5650 5800 5900
+Wire Wire Line
+	5500 5650 5800 5650
+Wire Wire Line
+	5500 6300 5500 6350
+Wire Wire Line
+	5500 5600 5500 5650
+$Comp
+L artemisa:GND #PWR?
+U 1 1 608C2131
+P 5500 6400
+AR Path="/5AE11EC9/608C2131" Ref="#PWR?"  Part="1" 
+AR Path="/5B118A76/608C2131" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 5500 6300 60  0001 C CNN
+F 1 "GND" H 5500 6500 60  0001 C CNN
+F 2 "" H 5500 6400 60  0001 C CNN
+F 3 "" H 5500 6400 60  0001 C CNN
+	1    5500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L artemisa:VCC #PWR?
+U 1 1 608C2137
+P 5500 5600
+AR Path="/5AE11EC9/608C2137" Ref="#PWR?"  Part="1" 
+AR Path="/5B118A76/608C2137" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 5500 5550 60  0001 C CNN
+F 1 "VCC" H 5500 5850 60  0001 C CNN
+F 2 "" H 5500 5600 60  0001 C CNN
+F 3 "" H 5500 5600 60  0001 C CNN
+	1    5500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L artemisa:Cap C?
+U 1 1 608C213D
+P 5800 6000
+AR Path="/5AE11EC9/608C213D" Ref="C?"  Part="1" 
+AR Path="/5B118A76/608C213D" Ref="C22"  Part="1" 
+F 0 "C22" V 5850 6050 50  0000 L CNN
+F 1 "100nF" V 5850 5700 50  0000 L CNN
+F 2 "artemisa:Disc_capacitor" H 5800 6000 50  0001 C CNN
+F 3 "" H 5800 6000 50  0001 C CNN
+	1    5800 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

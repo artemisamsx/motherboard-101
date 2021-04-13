@@ -578,6 +578,76 @@ Wire Wire Line
 Connection ~ 4350 4450
 Wire Wire Line
 	4350 4450 4350 4350
+$Comp
+L artemisa:74LS07 U?
+U 7 1 60836164
+P 9500 2200
+AR Path="/5AE11EC9/60836164" Ref="U?"  Part="7" 
+AR Path="/5AE5DD12/60836164" Ref="U16"  Part="7" 
+F 0 "U16" V 9300 2400 50  0000 L CNN
+F 1 "74LS07" V 9300 1850 50  0000 L CNN
+F 2 "artemisa:DIP-14_300" H 9500 2200 50  0001 C CNN
+F 3 "" H 9500 2200 50  0001 C CNN
+	7    9500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2550 9500 2600
+Connection ~ 9500 2550
+Wire Wire Line
+	9800 2550 9500 2550
+Wire Wire Line
+	9800 2300 9800 2550
+Wire Wire Line
+	9500 1850 9500 1900
+Connection ~ 9500 1850
+Wire Wire Line
+	9800 1850 9800 2100
+Wire Wire Line
+	9500 1850 9800 1850
+Wire Wire Line
+	9500 2500 9500 2550
+Wire Wire Line
+	9500 1800 9500 1850
+$Comp
+L artemisa:GND #PWR?
+U 1 1 60836174
+P 9500 2600
+AR Path="/5AE11EC9/60836174" Ref="#PWR?"  Part="1" 
+AR Path="/5AE5DD12/60836174" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 9500 2500 60  0001 C CNN
+F 1 "GND" H 9500 2700 60  0001 C CNN
+F 2 "" H 9500 2600 60  0001 C CNN
+F 3 "" H 9500 2600 60  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L artemisa:VCC #PWR?
+U 1 1 6083617A
+P 9500 1800
+AR Path="/5AE11EC9/6083617A" Ref="#PWR?"  Part="1" 
+AR Path="/5AE5DD12/6083617A" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 9500 1750 60  0001 C CNN
+F 1 "VCC" H 9500 2050 60  0001 C CNN
+F 2 "" H 9500 1800 60  0001 C CNN
+F 3 "" H 9500 1800 60  0001 C CNN
+	1    9500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L artemisa:Cap C?
+U 1 1 60836180
+P 9800 2200
+AR Path="/5AE11EC9/60836180" Ref="C?"  Part="1" 
+AR Path="/5AE5DD12/60836180" Ref="C18"  Part="1" 
+F 0 "C18" V 9850 2250 50  0000 L CNN
+F 1 "100nF" V 9850 1900 50  0000 L CNN
+F 2 "artemisa:Disc_capacitor" H 9800 2200 50  0001 C CNN
+F 3 "" H 9800 2200 50  0001 C CNN
+	1    9800 2200
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	3750 2350 3750 3400
 Wire Bus Line
