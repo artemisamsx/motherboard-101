@@ -14,126 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L artemisa:GND #PWR029
-U 1 1 5BE48BCA
-P 3850 3150
-F 0 "#PWR029" H 3850 3050 60  0001 C CNN
-F 1 "GND" H 3850 3250 60  0001 C CNN
-F 2 "" H 3850 3150 60  0001 C CNN
-F 3 "" H 3850 3150 60  0001 C CNN
-	1    3850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L artemisa:PWR_conn J1
-U 1 1 5B116116
-P 3850 2200
-F 0 "J1" H 4050 2550 50  0000 C CNN
-F 1 "PWR_conn" H 4200 1600 50  0000 C CNN
-F 2 "artemisa:Jack_55_21" H 3850 2100 60  0001 C CNN
-F 3 "" H 3850 2100 60  0001 C CNN
-	1    3850 2200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 1450 3850 1750
-Wire Wire Line
-	4250 2150 4450 2150
-$Comp
-L artemisa:VCC #PWR022
-U 1 1 5BE412CC
-P 3850 1250
-F 0 "#PWR022" H 3850 1200 60  0001 C CNN
-F 1 "VCC" H 3850 1500 60  0001 C CNN
-F 2 "" H 3850 1250 60  0001 C CNN
-F 3 "" H 3850 1250 60  0001 C CNN
-	1    3850 1250
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 1450
-Wire Wire Line
-	3850 1250 3850 1450
-Wire Wire Line
-	3850 2950 3850 3000
-Wire Wire Line
-	3850 3150 3850 3000
-Connection ~ 3850 3000
-Wire Wire Line
-	3000 3000 3850 3000
-Wire Wire Line
-	3850 3000 5000 3000
-$Comp
-L artemisa:CP C6
-U 1 1 5BDB7C43
-P 5000 1800
-F 0 "C6" V 4850 1800 50  0000 C CNN
-F 1 "10uF" V 5150 1800 50  0000 C CNN
-F 2 "artemisa:Radial_capacitor" H 5000 1800 50  0001 C CNN
-F 3 "" H 5000 1800 50  0001 C CNN
-	1    5000 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 1450 5000 1700
-$Comp
-L artemisa:CP C5
-U 1 1 5BDF1418
-P 4450 1800
-F 0 "C5" V 4300 1800 50  0000 C CNN
-F 1 "100uF" V 4600 1800 50  0000 C CNN
-F 2 "artemisa:Radial_capacitor" H 4450 1800 50  0001 C CNN
-F 3 "" H 4450 1800 50  0001 C CNN
-	1    4450 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 1450 4450 1450
-Wire Wire Line
-	4450 1450 5000 1450
-Connection ~ 4450 1450
-Wire Wire Line
-	4450 1450 4450 1700
-Wire Wire Line
-	4450 1900 4450 2150
-Wire Wire Line
-	5000 2150 5000 3000
-Wire Wire Line
-	5000 1900 5000 2150
-Connection ~ 5000 2150
-Connection ~ 4450 2150
-Wire Wire Line
-	4450 2150 5000 2150
-$Comp
-L artemisa:LED D2
-U 1 1 5BE7E85E
-P 3000 2350
-F 0 "D2" V 2900 2200 50  0000 L CNN
-F 1 "LED" V 2900 2400 50  0000 L CNN
-F 2 "artemisa:LED" H 3000 2350 50  0001 C CNN
-F 3 "~" H 3000 2350 50  0001 C CNN
-	1    3000 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 1450 3000 1450
-Wire Wire Line
-	3000 2500 3000 3000
-$Comp
-L artemisa:R R2
-U 1 1 5BE9872A
-P 3000 1900
-F 0 "R2" H 2950 1800 50  0000 L CNN
-F 1 "220" H 3000 2000 50  0000 C CNN
-F 2 "artemisa:Axial_resistor" V 3000 1900 60  0001 C CNN
-F 3 "" V 3000 1900 60  0001 C CNN
-	1    3000 1900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 1450 3000 1750
-Wire Wire Line
-	3000 2050 3000 2200
-$Comp
 L artemisa:74HCU04 U?
 U 1 1 5BFA12A0
 P 5900 4650
@@ -499,4 +379,124 @@ Wire Wire Line
 	5350 4200 5500 4200
 Wire Wire Line
 	5700 4200 5900 4200
+Wire Wire Line
+	4600 2050 4600 2200
+Wire Wire Line
+	4600 1450 4600 1750
+$Comp
+L artemisa:R R2
+U 1 1 5BE9872A
+P 4600 1900
+F 0 "R2" H 4550 1800 50  0000 L CNN
+F 1 "220" H 4600 2000 50  0000 C CNN
+F 2 "artemisa:Axial_resistor" V 4600 1900 60  0001 C CNN
+F 3 "" V 4600 1900 60  0001 C CNN
+	1    4600 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 2500 4600 3000
+Wire Wire Line
+	5450 1450 4600 1450
+$Comp
+L artemisa:LED D2
+U 1 1 5BE7E85E
+P 4600 2350
+F 0 "D2" V 4500 2200 50  0000 L CNN
+F 1 "LED" V 4500 2400 50  0000 L CNN
+F 2 "artemisa:LED" H 4600 2350 50  0001 C CNN
+F 3 "~" H 4600 2350 50  0001 C CNN
+	1    4600 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2150 6600 2150
+Connection ~ 6050 2150
+Connection ~ 6600 2150
+Wire Wire Line
+	6600 1900 6600 2150
+Wire Wire Line
+	6600 2150 6600 3000
+Wire Wire Line
+	6050 1900 6050 2150
+Wire Wire Line
+	6050 1450 6050 1700
+Connection ~ 6050 1450
+Wire Wire Line
+	6050 1450 6600 1450
+Wire Wire Line
+	5450 1450 6050 1450
+$Comp
+L artemisa:CP C5
+U 1 1 5BDF1418
+P 6050 1800
+F 0 "C5" V 5900 1800 50  0000 C CNN
+F 1 "100uF" V 6200 1800 50  0000 C CNN
+F 2 "artemisa:Radial_capacitor" H 6050 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1450 6600 1700
+$Comp
+L artemisa:CP C6
+U 1 1 5BDB7C43
+P 6600 1800
+F 0 "C6" V 6450 1800 50  0000 C CNN
+F 1 "10uF" V 6750 1800 50  0000 C CNN
+F 2 "artemisa:Radial_capacitor" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3000 6600 3000
+Wire Wire Line
+	4600 3000 5450 3000
+Connection ~ 5450 3000
+Wire Wire Line
+	5450 3150 5450 3000
+Wire Wire Line
+	5450 2950 5450 3000
+Wire Wire Line
+	5450 1250 5450 1450
+Connection ~ 5450 1450
+$Comp
+L artemisa:VCC #PWR022
+U 1 1 5BE412CC
+P 5450 1250
+F 0 "#PWR022" H 5450 1200 60  0001 C CNN
+F 1 "VCC" H 5450 1500 60  0001 C CNN
+F 2 "" H 5450 1250 60  0001 C CNN
+F 3 "" H 5450 1250 60  0001 C CNN
+	1    5450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2150 6050 2150
+Wire Wire Line
+	5450 1450 5450 1750
+$Comp
+L artemisa:PWR_conn J1
+U 1 1 5B116116
+P 5450 2200
+F 0 "J1" H 5650 2550 50  0000 C CNN
+F 1 "PWR_conn" H 5800 1600 50  0000 C CNN
+F 2 "artemisa:Jack_55_21" H 5450 2100 60  0001 C CNN
+F 3 "" H 5450 2100 60  0001 C CNN
+	1    5450 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L artemisa:GND #PWR029
+U 1 1 5BE48BCA
+P 5450 3150
+F 0 "#PWR029" H 5450 3050 60  0001 C CNN
+F 1 "GND" H 5450 3250 60  0001 C CNN
+F 2 "" H 5450 3150 60  0001 C CNN
+F 3 "" H 5450 3150 60  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
